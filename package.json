@@ -1,0 +1,41 @@
+{
+  "name": "foulanzam",
+  "version": "1.0.0",
+  "description": "API projet Foulanzam",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasskadd/Foulanzam.git"
+  },
+  "author": "HKD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hasskadd/Foulanzam/issues"
+  },
+  "homepage": "https://github.com/hasskadd/Foulanzam#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.2.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.2",
+    "slugify": "^1.6.6",
+    "validator": "^13.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "^2.8.8"
+  }
+}
