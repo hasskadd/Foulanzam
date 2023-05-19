@@ -25,7 +25,7 @@ router
   .delete(
     authController.protect,
     authController.restrictTo('admin', 'lead-guide'),
-    tourController.deleteTour
+    pharmacyController.deletePharmacy
   );
 
 module.exports = router;
