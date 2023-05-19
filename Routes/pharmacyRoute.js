@@ -24,7 +24,7 @@ router
   .patch(pharmacyController.updatePharmacy)
   .delete(
     authController.protect,
-    authController.restrictTo('admin', 'lead-guide'),
+    authController.restrictTo('admin'),
     pharmacyController.deletePharmacy
   );
 
