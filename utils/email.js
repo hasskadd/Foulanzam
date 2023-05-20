@@ -9,18 +9,18 @@ const sendEmail = async (options) => {
       user: process.env.EMAIL_USERNAME,
       pass: process.env.EMAIL_PASSWORD,
     },
-    //Actvate in gmail "less secure app" option
   });
 
-  //2) Defin the email options
+  // 2) Define the email options
   const mailOptions = {
-    from: 'Hassane Kadri <hello@gmail.com>',
+    from: 'Hassane Kadri <hello@hkd.io>',
     to: options.email,
     subject: options.subject,
     text: options.message,
-    //html:
+    // html:
   };
-  //3) Actually send the eamil
+
+  // 3) Actually send the email
   await transporter.sendMail(mailOptions);
 };
 
