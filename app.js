@@ -3,7 +3,7 @@ const morgan = require('morgan');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
-const tourRouter = require('./Routes/tourRoutes');
+const pharmacyRouter = require('./Routes/pharmacyRoute');
 const userRouter = require('./Routes/userRoutes');
 
 const app = express();
@@ -24,7 +24,7 @@ app.use((req, res, next) => {
 });
 
 // 3) ROUTES
-//app.use('/api/v1/ph', tourRouter);
+app.use('/api/v1/pharmacy', pharmacyRouter);
 app.use('/api/v1/users', userRouter);
 
 app.all('*', (req, res, next) => {
